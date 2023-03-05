@@ -18,4 +18,3 @@ RUN rm -r /var/lib/apt/lists/*
 
 RUN PHP_OPENSSL=yes docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
     && docker-php-ext-install zip pdo_mysql mysqli mbstring imap
-
